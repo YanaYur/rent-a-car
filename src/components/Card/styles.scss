@@ -1,0 +1,66 @@
+@import '../../config.scss';
+
+.card {
+  width: 230px;
+  background-color: white;
+  border-radius: 7px;
+  box-shadow: 0px 0px 24px -12px rgba(0, 0, 0, 0.36);
+  margin: 10px;
+  
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+
+  &__favorite {
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    
+
+    svg {
+      color: $secondary-color;
+    }
+  }
+
+  &__image {
+    img {
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+
+  &__spec {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    &-title {
+      width: 100%;
+      &-text {
+        font-size: 18px;
+      }
+    }
+
+    &-details {
+      width: 100%;
+
+      &-text {
+        font-size: 12px;
+      }
+    }
+    &-price {
+      &-text {
+        font-size: 24px;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+.text-vertical-separation {
+  margin-bottom: 10px;
+}
+
+.text-section-vertical-separation {
+  margin-bottom: 10px;
+}
