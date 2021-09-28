@@ -6,7 +6,7 @@ const defaultInfo = {
 };
 
 export default function carsReducer(state = defaultInfo, action) {
-  debugger;
+
   switch (action.type) {
     case SET_CAR_LIST:
       return { ...state, carList: action.payload };
