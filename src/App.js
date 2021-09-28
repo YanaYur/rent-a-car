@@ -17,17 +17,17 @@ const App = () => {
   const [error, setError] = useState(null);
 
   const paramsHandler = async (params) => {
-    debugger;
+
     dispatch(setParams(params));
-    debugger;
+
     const availableCars = await CarsService.getAvailableCars({
       from: params.from,
       to: params.to,
       location: params.location.value,
     });
-    debugger;
+    
     dispatch(setAvailableCars(availableCars));
-    debugger;
+
   };
 
   return (

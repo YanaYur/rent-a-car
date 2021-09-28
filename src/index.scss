@@ -1,0 +1,40 @@
+@import './config.scss';
+
+body {
+  background-color: whitesmoke;
+  place-content: start space-evenly;
+  display: flex;
+  margin: 0;
+  font-family: "Roboto", serif;
+  scroll-behavior: smooth;
+  font-family: $font-family;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+  padding: 0;
+  color: $text-color;
+}
+
+.app {
+  height: 100vh;
+  width: 100vw;
+
+}
+
+.app-box {
+  height: 100vh;
+  width: 100vw;
+}
+
+.app-box-image {
+  background: url("https://resources-bucket-aefnmae93.s3.eu-west-3.amazonaws.com/images/backgrounds/vector_city.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}

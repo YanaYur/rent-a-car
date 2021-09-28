@@ -3,7 +3,7 @@ import App from "./App";
 import { createStore } from "redux";
 import { Provider } from "react-redux";
 import reducers from "./state/reducers";
-import "./config.scss";
+import "./index.scss";
 
 const store = createStore(
   reducers,
