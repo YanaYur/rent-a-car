@@ -1,17 +1,14 @@
 @import "../../config.scss";
 
 .title {
+  @include display-center;
   padding-top: 5%;
   padding-bottom: 3%;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  color: rgba(8, 2, 92, 0.959);
 
   .title-primary {
-    font-weight: 800;
     margin: 10px;
+    text-align: center;
   }
   .title-secondary {
     margin: 10px;
@@ -23,22 +20,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    h4 {
-      color: rgba(8, 2, 92, 0.959);
-    }
   }
   @media screen and (max-width: 700px) {
     .title,
     .title-secondary {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+      @include display-center;
+      color: $extra-color;
     }
 
     .title-primary {
-      font-weight: 300;
-      padding-left: 17%;
-      padding-right: 14%;
+      font-size: 25px;
+    }
+    .title-ranking {
       display: none;
     }
   }

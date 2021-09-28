@@ -1,3 +1,4 @@
+import React from "react";
 import "./styles.scss";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import FavoriteIcon from "@mui/icons-material/Favorite";
@@ -27,11 +28,11 @@ const Card = ({ data }) => {
             <span className="bold-text">Capacity:</span> {data.capacity}
           </p>
           <p className="card__spec-details-text">
-            <span className="bold-text">Price/day:</span> ${data.price}
+            <span className="bold-text">Price/day:</span> €{data.price}
           </p>
         </div>
         <div className="card__spec-price">
-          <p className="card__spec-price-text">Total ${data.totalPrice},00</p>
+          <p className="card__spec-price-text">Total {data.totalPrice},00€ </p>
         </div>
       </div>
     </div>
