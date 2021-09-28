@@ -1,9 +1,10 @@
+import React from "react";
 import TextField from "@mui/material/TextField";
 import Autocomplete from "@mui/material/Autocomplete";
 import ResponsiveDateTimePickers from "../Timepicker/ResponsiveDateTimePickers";
 import Button from "@mui/material/Button";
 import { useState } from "react";
-import { useSelector } from "react-redux";
+
 import "./styles.scss";
 
 export default function Search({ onSubmit, params }) {
@@ -26,23 +27,25 @@ export default function Search({ onSubmit, params }) {
     if ((location, fromDate, toDate)) {
       onSubmit({ from: fromDate, to: toDate, location });
     } else {
-      setError("Select all elements");
+      setError("Pease, select all fields");
     }
   };
 
   return (
     <div className="search-bar">
       <div className="search-bar__searcher">
-        <Autocomplete
-          disablePortal
-          id="office-searcher"
-          options={offices}
-          onChange={(_, value) => setLocation(value)}
-          fullWidth={true}
-          renderInput={(params) => (
-            <TextField {...params} label={"Choose your city"} />
-          )}
-        />
+        <div className="search-bar__autocomplete">
+          <Autocomplete
+            disablePortal
+            id="office-searcher"
+            options={offices}
+            onChange={(_, value) => setLocation(value)}
+            fullWidth={true}
+            renderInput={(params) => (
+              <TextField {...params} label={"Choose your city"} />
+            )}
+          />
+        </div>
         <ResponsiveDateTimePickers
           onChange={setFromDate}
           value={fromDate || params.from}
@@ -60,7 +63,7 @@ export default function Search({ onSubmit, params }) {
         >
           Search
         </Button>
-        {error && <p>{error}</p>}
+        <div>{error && <p>{error}</p>}</div>
       </div>
     </div>
   );

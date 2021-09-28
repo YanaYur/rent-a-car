@@ -1,25 +1,26 @@
 @import "../../config.scss";
 
 .search-bar {
-  display: flex;
+  @include display;
   align-items: center;
   border-radius: 5px;
   justify-content: center;
 
   &__searcher {
+    @include display-row;
     background-color: rgba(255, 255, 255);
     width: 62rem;
     height: 6rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     border: 3px solid white;
     border-radius: 5px;
     padding: 20px;
     box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.1), 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+    transition: width 1s;
+    line-height: 1.6;
   }
-
+  &__autocomplete {
+    width: 25%;
+  }
   .button-submit {
     width: 200px;
     height: 55px;
@@ -29,29 +30,33 @@
     font-size: 15px;
     color: black;
   }
-  #office-searcher{
-    width:100%;
-  }
+ 
   @media screen and (max-width: 950px) {
-   
     .search-bar__searcher {
-      flex-direction: column;
+      @include display-center;
       justify-content: space-between;
-      align-items: center;
       width: 40rem;
       height: 15rem;
     }
-   
+    .search-bar__autocomplete {
+      width: 100%;
+    }
+    
   }
-  @media screen and (max-width: 650px) {
-   
+  @media screen and (max-device-width: 700px) {
     .search-bar__searcher {
-      flex-direction: column;
+      @include display-center;
       justify-content: space-between;
-      align-items: center;
-      width: 25rem;
+      width: 30rem;
       height: 15rem;
     }
-   
+  }
+  @media screen and (max-device-width: 600px) {
+    .search-bar__searcher {
+      @include display-center;
+      justify-content: space-between;
+      width: 18rem;
+      height: 15rem;
+    }
   }
 }
