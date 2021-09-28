@@ -1,5 +1,6 @@
 import React from "react";
 import MenuIcon from "@mui/icons-material/Menu";
+import Button from "@mui/material/Button";
 import "./styles.scss";
 
 function Header() {
@@ -13,7 +14,9 @@ function Header() {
       <a href="#vehicles">Vehicles</a>
       <a href="#about_us">About us</a>
       <a href="#contact">Contact</a>
-      <button type="button">Sign In</button>
+      <Button variant="outlined" className="button-signin">
+        Sign In
+      </Button>
       <div className="header-mobile-button">
         <MenuIcon />
       </div>
