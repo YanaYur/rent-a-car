@@ -41,4 +41,4 @@ npm run build
 
 ### Tests
 
-![test](src/assets/images/test.PNG)
+![test](src/assets/images/test.png)
