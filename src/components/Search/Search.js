@@ -24,10 +24,11 @@ export default function Search({ onSubmit, params }) {
   const [error, setError] = useState();
 
   const handleSubmit = () => {
-    if ((location, fromDate, toDate)) {
+    if ((location, fromDate, toDate) && fromDate < toDate) {
       onSubmit({ from: fromDate, to: toDate, location });
+      setError();
     } else {
-      setError("Pease, select all fields");
+      setError("*Please, select correct data");
     }
   };
 
@@ -56,6 +57,7 @@ export default function Search({ onSubmit, params }) {
           value={toDate || params.to}
           label={"Choose date to"}
         />
+        <div>{error ? <p>{error}</p> : ""}</div>
         <Button
           variant="outlined"
           className="button-submit"
@@ -63,7 +65,6 @@ export default function Search({ onSubmit, params }) {
         >
           Search
         </Button>
-        <div>{error && <p>{error}</p>}</div>
       </div>
     </div>
   );

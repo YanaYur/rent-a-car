@@ -3,7 +3,7 @@ import "./styles.scss";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 
-const favs = ["Fiat"];
+const favs = ["Fiat", "Audi"];
 
 const Card = ({ data }) => {
   return (

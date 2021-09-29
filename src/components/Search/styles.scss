@@ -21,6 +21,11 @@
   &__autocomplete {
     width: 25%;
   }
+  p{
+    font-size: 10px;
+    text-align: center;
+    color:$text-secondary-color;
+  }
   .button-submit {
     width: 200px;
     height: 55px;

@@ -47,11 +47,6 @@ module.exports = () => {
     module: {
       rules: [ruleForJavascript, ruleForStyles],
     },
-    // devServer: {
-    //   open: true,
-    //   port: 3000,
-    //   overlay: true,
-    //   compress: true,
-    // },
+
   };
 };

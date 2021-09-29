@@ -7,6 +7,6 @@
     }
   },
   "rules": {
-    "valid-typeof": ["warn"]
+    // "valid-typeof": ["warn"]
   }
 }

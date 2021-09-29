@@ -1,0 +1,358 @@
+/*!**********************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/components/Header/styles.scss ***!
+  \**********************************************************************************************************************************************************************/
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  font-size: 15px;
+  z-index: 999;
+  padding-top: 8px;
+}
+.header-logo {
+  min-width: 40%;
+  cursor: pointer;
+}
+.header a {
+  cursor: pointer;
+  text-decoration: none;
+  color: rgba(8, 2, 92, 0.959);
+}
+.header button {
+  cursor: pointer;
+  height: 40px;
+  width: 100px;
+  background-color: #00d27d;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  color: rgba(8, 2, 92, 0.959);
+}
+.header-mobile-button {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .header {
+    padding-top: 14px;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  a,
+.button-signin {
+    display: none;
+  }
+
+  .header-mobile-button {
+    display: flex;
+    margin-right: 12px;
+  }
+  .header-mobile-button svg {
+    font-size: 2rem;
+  }
+
+  .header-logo {
+    margin-left: 12px;
+  }
+}
+/*!**************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/components/Timepicker/styles.scss ***!
+  \**************************************************************************************************************************************************************************/
+.datepicker-container {
+  width: 25%;
+}
+
+@media screen and (max-width: 950px) {
+  .datepicker-container {
+    width: 100%;
+  }
+}
+/*!**********************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/components/Search/styles.scss ***!
+  \**********************************************************************************************************************************************************************/
+.search-bar {
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 5px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.search-bar__searcher {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: white;
+  width: 62rem;
+  height: 6rem;
+  border: 3px solid white;
+  border-radius: 5px;
+  padding: 20px;
+  -webkit-box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.1), 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.1), 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+  -webkit-transition: width 1s;
+  transition: width 1s;
+  line-height: 1.6;
+}
+.search-bar__autocomplete {
+  width: 25%;
+}
+.search-bar .button-submit {
+  width: 200px;
+  height: 55px;
+  background-color: #00d27d;
+  border: 2px solid white;
+  border-radius: 5px;
+  font-size: 15px;
+  color: black;
+}
+@media screen and (max-width: 950px) {
+  .search-bar .search-bar__searcher {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 40rem;
+    height: 15rem;
+  }
+  .search-bar .search-bar__autocomplete {
+    width: 100%;
+  }
+}
+@media screen and (max-device-width: 700px) {
+  .search-bar .search-bar__searcher {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 30rem;
+    height: 15rem;
+  }
+}
+@media screen and (max-device-width: 600px) {
+  .search-bar .search-bar__searcher {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 18rem;
+    height: 15rem;
+  }
+}
+/*!*********************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/components/Title/styles.scss ***!
+  \*********************************************************************************************************************************************************************/
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5%;
+  padding-bottom: 3%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.title .title-primary {
+  margin: 10px;
+  text-align: center;
+}
+.title .title-secondary {
+  margin: 10px;
+}
+.title .title-ranking {
+  color: #00d27d;
+  width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+@media screen and (max-width: 700px) {
+  .title .title,
+.title .title-secondary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #00814e;
+  }
+  .title .title-primary {
+    font-size: 25px;
+  }
+  .title .title-ranking {
+    display: none;
+  }
+}
+/*!********************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/components/Card/styles.scss ***!
+  \********************************************************************************************************************************************************************/
+.card {
+  width: 230px;
+  background-color: white;
+  border-radius: 7px;
+  -webkit-box-shadow: 0px 0px 24px -12px rgba(0, 0, 0, 0.36);
+  box-shadow: 0px 0px 24px -12px rgba(0, 0, 0, 0.36);
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 15px;
+}
+.card__favorite {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+.card__favorite svg {
+  color: #00d27d;
+}
+.card__image img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+}
+.card__spec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+}
+.card__spec-title {
+  width: 100%;
+}
+.card__spec-title-text {
+  font-size: 18px;
+}
+.card__spec-details {
+  width: 100%;
+}
+.card__spec-details-text {
+  font-size: 12px;
+}
+.card__spec-price-text {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.text-vertical-separation {
+  margin-bottom: 10px;
+}
+
+.text-section-vertical-separation {
+  margin-bottom: 10px;
+}
+/*!********************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/components/List/styles.scss ***!
+  \********************************************************************************************************************************************************************/
+.list {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 20px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.list .list {
+  background-color: white;
+  width: 100%;
+  height: 18rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.list .list .image {
+  width: 100%;
+  background-color: yellow;
+}
+.list .list .image img {
+  width: 100%;
+}
+.list .list .wrapper {
+  font-size: 17px;
+  padding: 4px;
+}
+/*!***************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/index.scss ***!
+  \***************************************************************************************************************************************************/
+body {
+  background-color: whitesmoke;
+  -ms-flex-line-pack: start;
+  align-content: start;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  place-content: start space-evenly;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  font-family: "Roboto", serif;
+  scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+  padding: 0;
+  color: rgba(8, 2, 92, 0.959);
+}
+
+.app {
+  height: 100vh;
+  width: 100vw;
+}
+
+.app-box {
+  height: 100vh;
+  width: 100vw;
+}
+
+.app-box-image {
+  background: url("https://resources-bucket-aefnmae93.s3.eu-west-3.amazonaws.com/images/backgrounds/vector_city.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
